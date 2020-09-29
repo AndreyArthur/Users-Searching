@@ -1,0 +1,51 @@
+Ter um Loading quando houver um request na api
+  Enquanto isso o input ficará desabilitado
+
+Precisa haver pelo menos uma letra no input para habilitar o botão de Busca
+  Ao clicar em Enter ele também busca
+
+Para cada usuário precisa haver
+  Foto
+  Nome
+  Idade
+
+Nas estatísticas precisa haver
+  Quantos usuários do sexo masculino foram encontrados na pesquisa
+  Quantas usuárias do sexo feminino foram encontradas na pesquisa
+  A soma das idades da pesquisa
+  E a média da idade dos usuários da pesquisa
+
+
+
+
+let maleUsers;
+let femaleUsers;
+let sumOfAges;
+let averageAges;
+
+let input;
+let button;
+let form;
+
+let usersData;
+
+maleUsers = document.querySelector('#maleUsers');
+  femaleUsers = document.querySelector('#femaleUsers');
+  sumOfAges = document.querySelector('#sumOfAges');
+  averageAges = document.querySelector('#averageAges');
+
+  input = document.querySelector('form input');
+  button = document.querySelector('form button');
+  form = document.querySelector('form');
+
+  const userItem = document.createElement('li');
+  const userImage = document.createElement('img');
+  userImage.setAttribute('src', picture);
+  const userProfile = document.createElement('span');
+  userProfile.textContent = `${name}, ${age} anos`;
+
+  userItem.appendChild(userImage);
+  userItem.appendChild(userProfile);
+
+  usersList.appendChild(userItem);
+  const usersList = document.querySelector('.users-box ul');

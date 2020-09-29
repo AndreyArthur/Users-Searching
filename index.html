@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Users Search</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Users Search</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      
+      <form>
+        <label for="user">Search</label>
+        <input required type="text" name="user" placeholder="Type here...">
+        <button type="submit">Search</button>
+      </form>
+
+      <div>
+        <div class="users-box">
+          <h1><span id="numberOfUsers">0</span> users found</h1>
+
+          <ul>
+          </ul>
+  
+        </div>
+  
+        <div class="stats-box">
+          <h1>Stats</h1>
+
+          <ul>
+            <li>
+              <span>Male: </span>
+              <strong id="maleUsers"></strong>
+            </li>
+            <li>
+              <span>Female: </span>
+              <strong id="femaleUsers"></strong>
+            </li>
+            <li>
+              <span>Sum of ages: </span>
+              <strong id="sumOfAges"></strong>
+            </li>
+            <li>
+              <span>Average ages: </span>
+              <strong id="averageAges"></strong>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="./js/users.js"></script>
+</body>
+</html>

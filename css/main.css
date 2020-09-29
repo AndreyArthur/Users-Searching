@@ -1,0 +1,246 @@
+:root {
+  font-size: 62.5%;
+
+  --background: #1F100A;
+  --text-prymary: #dddddd;
+  --border: #92e538;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: Roboto;
+
+  color: var(--text-prymary);
+}
+
+html, body {
+  height: 100%;
+
+  background-color: var(--background);
+
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1080px;
+
+  margin: 0 auto;
+  padding: 0 3%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+
+  height: 10rem;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 6rem;
+}
+
+main form {
+  width: 100%;
+}
+
+main form label {
+  display: block;
+
+  margin: 1rem 0;
+
+  font-size: 1.8rem;
+}
+
+main form input {
+  width: 70%;
+  height: 3rem;
+
+  border: 0;
+  border-bottom: 0.2rem solid var(--border);
+  border-radius: 0.1rem;
+  padding-left: 1.5rem;
+  margin-right: 2%;
+
+  background-color: var(--background);
+
+  font-size: 1.8rem;
+  color: var(--text-prymary);
+
+  outline: 0;
+}
+
+main form button {
+  width: 25%;
+  height: 3.5rem;
+
+  position: relative;
+  top: -0.1rem;
+
+  border: 0.2rem solid var(--border);
+  border-radius: 0.8rem;
+
+  background-color: var(--background);
+
+  font-size: 1.6rem;
+
+  outline: 0;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+main form button:hover {
+  background-color: var(--text-prymary);
+  color: var(--background);
+}
+
+main form button.disabled {
+  background-color: var(--background) !important;
+  border: 0 !important;
+
+  text-decoration: line-through;
+}
+
+main .container > div {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 4rem;
+}
+
+main .container > div div {
+  width: 46%;
+
+  border-left: 0.2rem solid var(--text-prymary);
+  border-radius: 0.1rem;
+  padding: 1.5rem;
+}
+
+main .container > div div h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+main .users-box ul {
+  list-style: none;
+}
+
+main .users-box ul li {
+  display: flex;
+  align-items: center;
+
+  margin: 2rem 0;
+}
+
+main .users-box ul li img {
+  width: 5rem;
+  height: 5rem;
+
+  border-radius: 2.5rem;
+  margin-right: 1rem;
+}
+
+main .users-box ul li span {
+  font-size: 2rem;
+}
+
+main .stats-box ul {
+  list-style: none;
+}
+
+main .stats-box ul li {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 800px) {
+  :root {
+    font-size: 55%;
+  }
+
+  @media (max-width: 690px) {
+    :root {
+      font-size: 50%;
+    }
+
+    @media (max-width: 625px) {
+      :root {
+        font-size: 45%;
+      }
+
+      @media (max-width: 565px) {
+        :root {
+          font-size: 40%;
+        }
+
+        main form button,
+        main form input {
+          height: 5rem;
+          font-size: 2rem;
+        }
+
+        @media (max-width: 425px) {
+          :root {
+            font-size: 35%;
+          }
+
+          @media (max-width: 375px) {
+            :root {
+              font-size: 30%;
+            }
+
+            @media (max-width: 325px) {
+              :root {
+                font-size: 25%;
+              }
+
+              @media (max-width: 275px) {
+                :root {
+                  font-size: 20%;
+                }
+
+                @media (max-width: 225px) {
+                  :root {
+                    font-size: 15%;
+                  }
+
+                  @media (max-width: 170px) {
+                    :root {
+                      font-size: 12.5%;
+                    }
+
+                    @media (max-width: 150px) {
+                      :root {
+                        font-size: 10%;
+                      }
+
+                      @media (max-width: 133px) {
+                        :root {
+                          font-size: 7.5%;
+                        }
+
+                        @media (max-width: 100px) {
+                          :root {
+                            font-size: 5%;
+                          }
+
+                          @media (max-width: 75px) {
+                            :root {
+                              font-size: 4%;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
